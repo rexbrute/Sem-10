@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int modificat,n,i,a[100];
+   printf("Introduceti marime tablou: ");
+   scanf("%d",&n);
+   for(i=0;i<n;i++){
+   scanf("%d",&a[i]);}
+ do{
+ modificat = 0;
+ for(i = 0; i < n-1; i++){
+ if(a[i] < a[i+1]){
+ int temp = a[i];
+ a[i] = a[i+1];
+a[i+1] = temp;
+modificat = 1;
+ }
+ }
+ }while(modificat);
+ for(i=0;i<n;i++){
+ printf("%d ",a[i]);
+  }  return 0;
+}
