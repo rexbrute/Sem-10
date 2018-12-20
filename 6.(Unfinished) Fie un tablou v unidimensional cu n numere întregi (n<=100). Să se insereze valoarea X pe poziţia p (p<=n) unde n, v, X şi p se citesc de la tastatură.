@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ int n,i,p,a[50],x;
+printf("n=");
+scanf("%d",&n);
+printf("p=");
+scanf("%d",&p);
+printf("x=");
+scanf("%d",&x);
+for(i=0;i<n;i++)
+{scanf("%d",&a[i]);}
+ for(i=1;i<=n;++i){
+ if(a[p]==a[i]){printf("%d ",x);}
+ else
+ printf("%d ", a[i]);}
+
+    return 0;
+}
