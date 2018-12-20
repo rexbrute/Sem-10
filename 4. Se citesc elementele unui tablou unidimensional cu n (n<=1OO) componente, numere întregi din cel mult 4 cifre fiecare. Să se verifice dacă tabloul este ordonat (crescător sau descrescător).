@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,n,v[50],x,ok,k=0;
+    printf("n=");
+    scanf("%d",&n);
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&v[i]);
+    }
+    ok=1;
+    i=0;
+    while((i<n-1)&&(ok!=0))
+    {
+        if(v[i]>v[i+1])
+            ok=0;
+            if(v[i]<v[i+1])
+            ok=1;
+        i++;
+    }
+    if(ok==0)
+        printf("Vectorul este ordonat defapt ");
+    else if(ok==1)
+        printf("Vectorul este ordonat  ");
+        else printf("Vectorul nu este ordonat ");
+
+
+    return 0;
+}
